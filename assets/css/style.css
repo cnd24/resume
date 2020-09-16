@@ -145,7 +145,7 @@ section {
 
 @media (max-width: 768px) {
     #presentation h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         line-height: 36px;
     }
     #presentation h2 {
