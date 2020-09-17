@@ -1,5 +1,5 @@
+//btn back to top
 var myBtn = document.getElementById("back-to-top");
-
 
 window.onscroll = function() {
     scrollFunction()
@@ -12,3 +12,11 @@ function scrollFunction() {
         myBtn.style.display = "none";
     }
 }
+
+
+//menu de navigation
+$(document).ready(function() {
+    $(document).on('click', '.nav-item a', function (e) {
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    });
+});

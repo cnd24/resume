@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #5a656e;
+    font-size: 1.1rem;
 }
 
 a {
@@ -47,12 +48,13 @@ h2::after {
 }
 
 section {
-    padding: 60px 0;
+    padding: 90px 0;
+    min-height: 100vh;
 }
 
 .badge-coral {
     background-color: #F78F96;
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 16px;
     margin: 12px 10px 12px 0;
     color: #fff;
@@ -182,7 +184,9 @@ section {
     font-family: "Open Sans", sans-serif;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active,
+.navbar-light .navbar-nav .active > .nav-link {
     color: #F78F96;
     text-decoration: none;
 }
@@ -211,13 +215,11 @@ section {
 .about .content .count-box p {
     padding: 15px 0 0 0;
     margin: 0 0 0 50px;
-    font-size: 14px;
     color: #6689a1;
 }
 
 .about .content .count-box ul li {
     list-style-type: none;
-    font-size: 0.9rem;
     color: #6689a1;
     display: flex;
 }
@@ -252,7 +254,7 @@ section {
 
 .skills .badge-grey {
     background-color: #6689a1;
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 16px;
     margin: 12px 10px 12px 0;
     color: #fff;
@@ -266,7 +268,6 @@ section {
 
 
 /* PROJECTS */
-
 
 #projects .portfolio-item {
     max-width: 25rem;
@@ -326,8 +327,10 @@ section {
     border: none;
 }
 
-.project-modal .modal-body img {
-    border: #f78f96 solid 1px;
+.project-modal .modal-body > img {
+    box-shadow:
+            7px 7px 16px 0 rgba(0, 0, 0, 0.15),
+            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
 
 .project-modal .modal-body i {
