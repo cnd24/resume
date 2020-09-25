@@ -52,6 +52,18 @@ section {
     min-height: 100vh;
 }
 
+
+@media (max-width: 991px) {
+    section {
+        padding-top: 50px;
+    }
+
+    section h2 {
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+}
+
 .badge-coral {
     background-color: #F78F96;
     padding: 10px 15px;
