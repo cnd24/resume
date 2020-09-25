@@ -20,3 +20,8 @@ $(document).ready(function() {
         $(this).parent().addClass('active').siblings().removeClass('active');
     });
 });
+
+
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
